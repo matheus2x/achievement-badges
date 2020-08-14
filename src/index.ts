@@ -1,6 +1,6 @@
 import "./config/environment";
 import "./config/database";
-import app from "./app";
+import app from "./app/app";
 
 const { SERVER_PORT } = process.env;
 
