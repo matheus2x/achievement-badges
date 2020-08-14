@@ -30,6 +30,7 @@
     "prettier/prettier": "error",
 
     "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/camalcase": "off"
+    "@typescript-eslint/camalcase": "off",
+    "@typescript-eslint/naming-convention": "off"
   }
 }
