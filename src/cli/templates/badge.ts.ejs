@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Achievement Badge</title>
+  </head>
+  <body>
+    <section class="badge">
+      <div class="game-info">
+        <img
+          src=<%= props.game_thumb %>
+        />
+        <h1><%= props.game_name %></h1>
+        <div class="game-time">
+          <span><%= props.play_time_total %> horas registradas</span><br />
+          <span><%= props.play_time_recent %> horas nos últimos dias</span>
+        </div>
+      </div>
+      <div class="achievs-info">
+        <p>Progresso em conquistas &nbsp;&nbsp; <span><%= props.achievs_length %> de <%= props.achievs_length %></span></p>
+        <div class="progress-bar"></div>
+        <div class="icons">
+          <img
+            src=<%= props.icon1 %>
+          />
+          <img
+            src=<%= props.icon2 %>
+          />
+          <img
+            src=<%= props.icon3 %>
+          />
+          <img
+            src=<%= props.icon4 %>
+          />
+          <img
+            src=<%= props.icon5 %>
+          />
+          <div class="remaining">
+            <span>+<%= props.remaining %></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

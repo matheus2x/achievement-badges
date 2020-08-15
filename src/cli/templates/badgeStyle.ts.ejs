@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* upper side */
+
+section.badge {
+  background-color: #161720;
+  border-radius: 22px;
+
+  width: 1007px;
+  height: 241px;
+
+  padding: 21px 21px 0 21px;
+}
+
+section.badge div.game-info {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 268px 2fr 1fr;
+  grid-template-areas:
+    "thumb title ."
+    "thumb title time";
+}
+
+section.badge div.game-info img {
+  width: 268px;
+  height: 110px;
+  grid-area: thumb;
+}
+
+section.badge div.game-info h1 {
+  color: #ebebeb;
+  font-weight: normal;
+  font-size: 21px;
+  margin-left: 10px;
+  margin-top: 10px;
+  grid-area: title;
+}
+
+section.badge div.game-info div.game-time {
+  grid-area: time;
+  text-align: right;
+  align-self: end;
+}
+
+section.badge div.game-info div.game-time span {
+  color: #8f98a0;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/* lower side */
+
+section.badge div.achievs-info {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top: 1px solid #383a4b;
+  background-color: #21222e;
+  width: 965px;
+  height: 89px;
+  margin-top: 21px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+}
+
+section.badge div.achievs-info p {
+  color: #ebebeb;
+  font-size: 21px;
+}
+
+section.badge div.achievs-info p > span {
+  color: #717882;
+  font-weight: bold;
+}
+
+section.badge div.achievs-info div.progress-bar {
+  width: 210px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #717882;
+  margin: 0 16px;
+}
+
+section.badge div.achievs-info div.icons {
+  display: flex;
+  gap: 9.29px;
+}
+
+section.badge div.achievs-info div.icons img {
+  width: 54px;
+  height: 54px;
+}
+
+section.badge div.achievs-info div.icons div.remaining {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  background-color: #161720;
+  box-shadow: 1px 1px 1px #383a4b;
+  width: 54px;
+  height: 54px;
+  padding: 12px 7px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.badge div.achievs-info div.icons div.remaining > span {
+  color: #fff;
+  font-size: 21px;
+}
