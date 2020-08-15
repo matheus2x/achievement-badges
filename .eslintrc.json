@@ -15,8 +15,12 @@
     "import",
     "prettier",
     "json",
+    "html",
     "markdown"
   ],
+  "settings": {
+    "html/html-extensions": [".html", ".ejs"]
+  },
   "env": {
     "es6": true,
     "node": true,
