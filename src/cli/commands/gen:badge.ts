@@ -58,11 +58,6 @@ const genBadge: GluegunCommand = {
       },
     });
 
-    await template.generate({
-      template: "badgeStyle.ts.ejs",
-      target: `src/badges/${game_name.replace(/\s/g, "")}/styles.css`,
-    });
-
     success("badge generated");
   },
 };
