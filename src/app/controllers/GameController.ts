@@ -94,12 +94,12 @@ export async function store(req: Request, res: Response) {
     playtime_forever: number;
   }
 
-  const [{ play_time_recent, play_time_total }] = schemaRecentlyData
+  const [{ time_recent, time_total }] = schemaRecentlyData
     .map((game: schemaRecentlyData) => {
       if (game.appid === game_id) {
         return {
-          play_time_recent: game.playtime_2weeks,
-          play_time_total: game.playtime_forever,
+          time_recent: game.playtime_2weeks,
+          time_total: game.playtime_forever,
         };
       }
 
@@ -108,6 +108,14 @@ export async function store(req: Request, res: Response) {
     .filter((item: schemaRecentlyData) => {
       return item !== null;
     });
+
+  const play_time_recent = Math.round(((time_recent / 60) * 100) / 100).toFixed(
+    2
+  );
+
+  const play_time_total = Math.round(((time_total / 60) * 100) / 100).toFixed(
+    2
+  );
 
   const game = await Game.create({
     user_id,
