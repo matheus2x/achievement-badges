@@ -27,6 +27,7 @@ export async function store(req: Request, res: Response) {
     unlocktime: number;
   }
 
+  const game_name = schemaForAchievs.data.playerstats.gameName;
   const schemaForAchievsData = schemaForAchievs.data.playerstats.achievements;
 
   const allAchievsHaveMade = schemaForAchievsData
@@ -76,7 +77,6 @@ export async function store(req: Request, res: Response) {
     })
     .slice(0, 5);
 
-  const game_name = schemaForGameData.gameName;
   const game_thumb = `https://steamcdn-a.akamaihd.net/steam/apps/${game_id}/header.jpg`;
   const achievs_length =
     schemaForGameData.availableGameStats.achievements.length;
