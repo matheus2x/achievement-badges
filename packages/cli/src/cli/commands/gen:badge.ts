@@ -3,8 +3,8 @@ import { GluegunCommand } from "gluegun";
 
 import "../../config/environment";
 
-const { SERVER_PORT } = process.env;
-const api = axios.create({ baseURL: `http://localhost:${SERVER_PORT}` });
+const { SERVER_HOST, SERVER_PORT } = process.env;
+const api = axios.create({ baseURL: `${SERVER_HOST}:${SERVER_PORT}` });
 
 const genBadge: GluegunCommand = {
   name: "gen:badge",
@@ -42,7 +42,7 @@ const genBadge: GluegunCommand = {
 
     await template.generate({
       template: "badge.ts.ejs",
-      target: `src/badges/${game_name.replace(/\s/g, "")}/index.html`,
+      target: `dist/${game_name.replace(/\s/g, "")}.html`,
       props: {
         game_thumb,
         game_name,
