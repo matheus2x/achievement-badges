@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" title="#logo" width="400px" src=".github/steam.svg"><br>
+    <img alt="Logo" title="#logo" width="200px" src=".github/steam.svg"><br>
 </h1>
 
 <p align="center">
@@ -9,8 +9,6 @@
     <img alt="License" src="https://img.shields.io/github/license/matheus2x/achievement-badges?color=%232b7489">
   </a>
 </p>
-
-<img src=".github/web.png" align="center" />
 
 # Summary
 
