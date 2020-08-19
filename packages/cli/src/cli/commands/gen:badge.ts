@@ -58,7 +58,7 @@ const genBadge: GluegunCommand = {
       },
     });
 
-    success("badge generated");
+    success(`Successful! badge for game "${game_name}" generated!`);
   },
 };
 
