@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" title="#logo" width="200px" src=".github/steam.svg"><br>
+    <img alt="Logo" title="#logo" width="200px" src=".github/steam.png"><br>
 </h1>
 
 <p align="center">
