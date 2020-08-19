@@ -1,0 +1,14 @@
+{
+  "name": "@achievement-badges/cli",
+  "version": "1.0.0",
+  "main": "src/cli.ts",
+  "license": "MIT",
+  "bin": {
+    "achievement-badges": "bin/achievement-badges"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "8.2.0",
+    "gluegun": "^4.4.0"
+  }
+}
